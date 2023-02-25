@@ -1,0 +1,152 @@
+// Có thể gọi class theo kiểu css nhưng nên sử dụng viết theo kiểu SASS sử dụng NESTED
+// Có thể lồng nhau bao nhiêu cũng được nhưng theo best practise nên chỉ dừng ở 6
+.myNavBar {
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    .myNavBar__left {
+        display: flex;
+        align-items: center;
+        .navbar-brand {
+            flex-grow: 1;
+            margin-right: 0;
+            .logo-black {
+                display: inline-block;
+            }
+            .logo-white {
+                display: none;
+            }
+            img {
+                width: 110px;
+            }
+        }
+        .myNavBar__categories {
+            flex-grow: 1;
+            @include styleText($color-black-light, $fs-1, $fw-0);
+            cursor: pointer;
+            i {
+                color: $color-gray-3;
+            }
+        }
+        form.myNavBar__form-seach {
+            flex-grow: 8;
+            @include styleFormSearch($color-white-cream, $color-white-0, $color-gray-4, $color-black-light);
+        }
+    }
+    .myNavBar__right {
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-item {
+            border-radius: $border-radius + 1;
+            position: relative;
+            .nav-link {
+                @include styleText($color-black-light, $fs-1, $fw-0);
+                padding: $pd-0 $pd-0 + 2;
+            }
+            &:hover {
+                background-color: $color-gray-1;
+                .overlay {
+                    display: block;
+                }
+            }
+            .overlay {
+                z-index: 2;
+                display: none;
+                background-color: $color-white-0;
+                width: 330px;
+                padding: $pd-3;
+                text-align: center;
+                position: absolute;
+                right: 0;
+                top: 130%;
+                // border: 1px solid;
+                box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    background-color: $color-white-0;
+                    border-top: 1px solid $color-gray-1;
+                    border-left: 1px solid $color-gray-1;
+                    position: absolute;
+                    top: -8px;
+                    right: 10%;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        .myNavBar__cart {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            .nav-link {
+                font-size: $fs-3 + 2;
+            }
+        }
+        .myNavBar__button {
+            display: flex;
+            &:hover {
+                background-color: transparent;
+            }
+            .button--white {
+                margin-right: $mg-0;
+            }
+            .button {
+                white-space: nowrap;
+            }
+        }
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1355px) {
+        
+        .myNavBar__right {
+            .myNavBar {
+                .nav-item {
+                    white-space: nowrap;
+                    .nav-link {
+                        font-size: $fs-1 - 1;
+                        white-space: nowrap;
+                        // color: red;
+
+                    }
+                }
+            }
+        }
+        .myNavBar--reset {
+            padding-left: 0;
+        }
+    }
+    // max-width: 1200px;
+    @include responsive("extra-large") {
+        
+        .business,
+        .instructor {
+            display: none;
+        }
+        .myNavBar__right {
+            .navbar-nav {
+                justify-content: space-around;
+            }
+        }
+    }
+    @include responsive("medium") {
+      
+        .myNavBar__left {
+            .myNavBar__categories,
+            .myNavBar__form-seach {
+                display: none;
+            }
+        }
+        .myNavBar__right {
+            width: 50%;
+            margin-left: auto;
+            .navbar-nav {
+                text-align: center;
+                .myNavBar__button {
+                    display: none;
+                }
+            }
+        }
+    }
+}

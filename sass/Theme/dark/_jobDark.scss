@@ -1,0 +1,13 @@
+.darkMode {
+    .jobs__content {
+        background-color: $color-dark-6;
+        .jobs__item {
+            h2 {
+                color: $color-dark-5;
+            }
+        }
+        .border-right {
+            border-right: 1px solid $color-dark-2!important;
+        }
+    }
+}

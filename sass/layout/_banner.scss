@@ -1,0 +1,22 @@
+.banner {
+    // background: color url() position / background-size background-repeat
+    // dùng dấu phẩy thì sẽ kết hợp 2 kiểu bg 1 lúc, 42% nằm sau nghĩa là màu xanh sẽ bắt đầu trải từ 41%, còn nếu thêm phần trăm ở màu tims thì nghĩa là từ 0 đến phần trăm đó
+    background: url("../img/udemy-logo-semi-transparent.svg") 0 / 30% no-repeat,
+        linear-gradient(61deg, $color-purple, $color-blue-1 41%);
+    //    trộn lẫn logo với background để hòa hợp hơn(hòa trộn màu)
+    background-blend-mode: overlay;
+    height: 325px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    h2 {
+        @include styleText($color-white-0, $fs-4, $fw-0);
+    }
+    p {
+       color: $color-white-0;
+       margin-bottom: 0;
+    }
+    button {
+        margin: $mg-0 + 5 0;
+    }
+}
