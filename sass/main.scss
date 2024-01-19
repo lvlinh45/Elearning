@@ -1,46 +1,46 @@
 // Seven In One
 // Folder HELPERS BẮT BUỘC IMPORT ĐẦU TIÊN
-@import './Helpers/variables';
-@import './Helpers/mixin';
-@import './Helpers/extend';
-
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+@import "./Helpers/extend";
 
 // Vendor: nơi lưu các thư viên, import trên thư viện chính để thư viện chính ở sau đè code
 
 // BASE
-@import './Base/reset';
-@import './Base/customize';
+@import "./Base/reset";
+@import "./Base/customize";
 
 // LAYOUT
-@import './layout/header';
-@import './layout/footer';
-@import './layout/intro';
-@import './layout/courses';
-@import './layout/viewing';
-@import './layout/banner';
-@import './layout/categories';
-@import './layout/student';
-@import './layout/partner';
-@import './layout/job';
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/intro";
+@import "./layout/courses";
+@import "./layout/viewing";
+@import "./layout/banner";
+@import "./layout/categories";
+@import "./layout/student";
+@import "./layout/partner";
+@import "./layout/job";
+@import "./layout/noti";
 
 // COMPONENTS
-@import './Components/button';
-@import './Components/cover';
-@import './Components/card';
+@import "./Components/button";
+@import "./Components/cover";
+@import "./Components/card";
 
 // PAGES
-@import './Pages/home';
+@import "./Pages/home";
 
 // THEMES
-@import './layout/sidebarMini';
-@import './Theme/dark/sidebarMiniDark';
-@import './Theme/dark/resetDark';
-@import './Theme/dark/headerDark';
-@import './Theme/dark/buttonDark';
-@import './Theme/dark/courseDark';
-@import './Theme/dark/cardDark';
-@import './Theme/dark/categoriesDark';
-@import './Theme/dark/studentDark';
-@import './Theme/dark/partnerDark';
-@import './Theme/dark/jobDark';
-@import './Theme/dark/footerDark';
+@import "./layout/sidebarMini";
+@import "./Theme/dark/sidebarMiniDark";
+@import "./Theme/dark/resetDark";
+@import "./Theme/dark/headerDark";
+@import "./Theme/dark/buttonDark";
+@import "./Theme/dark/courseDark";
+@import "./Theme/dark/cardDark";
+@import "./Theme/dark/categoriesDark";
+@import "./Theme/dark/studentDark";
+@import "./Theme/dark/partnerDark";
+@import "./Theme/dark/jobDark";
+@import "./Theme/dark/footerDark";
