@@ -16,32 +16,32 @@
 
 ### Sử dụng \*\* ở đầu, hoặc đầu và cuối câu để bôi đậm
 
-** Hôm nay là ngày đẹp trời
-** Tuyệt quá
+**Hôm nay là ngày đẹp trời**
+**Tuyệt quá**
 
 ### Sử dụng "\_" hoặc "\*" ở đầu, hoặc đầu và cuối câu để in nghiêng
 
-\_ In nghiêng nè
-\_Kết hợp in **đậm** và in nghiêng
+_In nghiêng nè_
+_Kết hợp in **đậm** và in nghiêng_
 
 # 3.Strikethrough
 
 ### Sử dụng ~~ ở đầu (hoặc đầu và cuối câu) nếu muốn gạch ngang giữa chữ của câu đó
 
-~~ In nghiêng nè ~~
+~~Gạch ngang giữa dòng nè~~
 
 # 4. LIST
 
 ### Sử dụng - hoặc \* hoặc + nếu muốn định dạng câu đó ở dạng list.Trong trường hợp muốn tạo thêm lớp level thấp hơn thì thêm 2 khoảng trắng vào nữa.
 
-### Unordered
+### DANH SÁCH KHÔNG SẮP XẾP
 
 - Item 1
 - Item 2
 - Item 2a
 - Item 2b
 
-### Ordered
+### DANH SÁCH SẮP XẾP
 
 1. Item 1
 2. Item 2
