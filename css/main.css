@@ -783,7 +783,7 @@ footer .footer__bottom .nav-link {
 }
 
 .cover {
-  background-image: url(./img/cover.jpg);
+  background-image: url(../img/cover.jpg);
   height: 500px;
   position: relative;
 }
