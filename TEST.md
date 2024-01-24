@@ -58,6 +58,8 @@ _Kết hợp in **đậm** và in nghiêng_
 ### Sử dụng cú pháp []() để chèn link trong bài viết, ở đó nội dung trong [] sẽ là thẻ alt text, và nội dung trong () sẽ là đường link mà bạn muốn điều hướng đến.
 
 [Udemy](https://vlinhk3.github.io/udemy/)
+[Xem kĩ cú pháp hơn tại đây](https://topdev.vn/blog/markdown-la-gi-cach-su-dung-markdown/)
+[Và tại đây](https://doidev.com/markdown-co-ban/)
 
 # 6. Images
 
